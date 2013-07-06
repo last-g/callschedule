@@ -3,11 +3,11 @@
   "description" : "Simple app that could manage Schedule based on whishes",
   "version" : "0.0.1",
   "author" : "Last G <last-g@hskbkontur.ru>",
+  "private" : true,
   "engines" : ["node"],
   "dependencies" : {
-    "sequelize" : "1.x",
+    "sequelize" : ">=1.5",
     "mysql" : "2.x",
-    "lodash" : "x",
-    "sqlite3" : "2.x"
+    "lodash" : "x"
   }
 }

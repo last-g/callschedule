@@ -41,8 +41,8 @@ module.exports = new (function() {
   var Load = this.Load = db.define('load', {
     start: Sequelize.DATE,
     end: Sequelize.DATE,
-    operators: Sequelize.INTEGER,
-    isForecast: Sequelize.INTEGER,
+    operators: {type: Sequelize.INTEGER, allowNull:false, default: 0},
+    isForecast: {type: Sequelize.INTEGER, allowNull:false},
     loadTypeId: Sequelize.INTEGER
   })
 
